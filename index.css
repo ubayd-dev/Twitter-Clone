@@ -1,0 +1,71 @@
+
+body{
+    background-color: black;
+    color: white;
+}
+/* .form-control{
+    background-color: black;
+} */
+.form-control::placeholder{
+    color: gray;
+}
+
+
+#tweetArea{
+    background-color: black;
+}
+#searchInput{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+.sidebar-item {
+    padding: 12px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.sidebar-item:hover {
+    background-color: gray;
+}
+.tweet-input {
+    border: none;
+    resize: none;
+   
+}
+.tweet-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.tweet-actions i {
+    color: #536471;
+}
+.tweet-actions i:hover {
+    color: #1da1f2;
+}
+
+.footer-section{
+    font-size: 12px;
+}
+
+.footer-section span{
+    margin-right: 10px;
+    color: gray;
+}
+.bi{
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.Copyright{
+    font-size: 12px;
+    color: gray;
+}
+
+

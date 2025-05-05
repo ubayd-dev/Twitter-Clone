@@ -3,9 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Twitter Clone</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=verified" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+    <link href="index.css" rel="stylesheet">
+    <link href="https://abs.twimg.com/favicons/twitter-pip.3.ico" rel="icon">
+
+   
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Sidebar -->
+            <div class="col-3 position-fixed h-100 border-end">
+                <div class="d-flex flex-column ms-5 p-3">
+                    <div class="mb-4">
+                        <i class="fab fa-twitter fa-2x text-primary"></i>
+                    </div>
+                    <div class="sidebar-item mb-2">
+                        <i class="fas fa-home me-2"></i>
+                        <span class="fw-bold">Home</span>
+                    </div>
+                    <div class="sidebar-item mb-2">
+                        <i class="fas fa-hashtag me-2"></i>
+                        <span>Explore</span>
+                    </div>
+                    <div class="sidebar-item mb-2">
+                        <i class="far fa-bell me-2"></i>
+                        <span>Notifications</span>
+                    </div>
+                    <div class="sidebar-item mb-2">
+                        <i class="far fa-envelope me-2"></i>
+                        <span>Messages</span>
+                    </div>
+                    <div class="sidebar-item mb-2">
+                        <i class="far fa-bookmark me-2"></i>
+                        <span>Bookmarks</span>
+                    </div>
+                    <div class="sidebar-item mb-2">
+                        <i class="far fa-user me-2"></i>
+                        <span>Profile</span>
+                    </div>
+                    <button class="btn btn-primary rounded-pill mt-3 w-100">Tweet</button>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-6 offset-3">
+                <!-- Header -->
+                <div class="border-bottom p-3">
+                    <h5 class="mb-0 fw-bold">Home</h5>
+                </div>
+
+                <!-- Tweet Composer -->
+                <div class="p-3 border-bottom">
+                    <div class="d-flex">
+                        <img src="https://pbs.twimg.com/profile_images/1848252945948692480/QKOO6sP0_x96.jpg" height="48" width="48" class="rounded-circle me-2" alt="Profile">
+                        <div class="flex-grow-1">
+                            <textarea class="form-control tweet-input mb-3" id="tweetArea" placeholder="What's happening?" rows="3"></textarea>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="far fa-image text-primary me-2"></i>
+                                    <i class="far fa-chart-bar text-primary me-2"></i>
+                                    <i class="far fa-smile text-primary me-2"></i>
+                                    <i class="far fa-calendar text-primary"></i>
+                                </div>
+                                <button class="btn btn-primary rounded-pill px-4">Tweet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tweet Feed -->
+                <div class="tweet p-3 border-bottom">
+                    <div class="d-flex">
+                        <img src="https://yt3.ggpht.com/ytc/AIdro_lB6sIurhYzTvaOej-XLkmuVPBkqVNBYoGd3-Oxw0B-Fkw=s68-c-k-c0x00ffffff-no-rj" height="48" width="48" class="rounded-circle me-2" alt="Profile">
+                        <div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="fw-bold me-2">John Doe</span>
+                                <span class="text-secondary">@johndoe · 2h</span>
+                            </div>
+                            <p class="mb-2">Just built a Twitter clone using Bootstrap! 🚀 #webdev #coding</p>
+                            <div class="tweet-actions d-flex justify-content-between w-75">
+                                <div><i class="far fa-comment"></i> <span class="ms-1">24</span></div>
+                                <div><i class="fas fa-retweet"></i> <span class="ms-1">142</span></div>
+                                <div><i class="far fa-heart"></i> <span class="ms-1">847</span></div>
+                                <div><i class="far fa-share-square"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tweet p-3 border-bottom">
+                    <div class="d-flex">
+                        <img src="https://yt3.ggpht.com/aulg3z-uPbuQmhR-ReWzGdTHB08tuln56bs4zz-uzIruNyW7o6jYZSwbUjQKChwoH6erRFmW=s68-c-k-c0x00ffffff-no-rj" height="48" width="48" class="rounded-circle me-2" alt="Profile">
+                        <div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="fw-bold me-2">Maria Taylor</span>
+                                <span class="text-secondary">@mariataylor · 5h</span>
+                            </div>
+                            <p class="mb-2">#travel #fun</p>
+                            <figure>
+                              <img class="w-100" src="travel.jpg">
+                          </figure>
+                            <div class="tweet-actions d-flex justify-content-between w-75">
+                                <div><i class="far fa-comment"></i> <span class="ms-1">18</span></div>
+                                <div><i class="fas fa-retweet"></i> <span class="ms-1">89</span></div>
+                                <div><i class="far fa-heart"></i> <span class="ms-1">563</span></div>
+                                <div><i class="far fa-share-square"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tweet p-3 border-bottom">
+                    <div class="d-flex">
+                        <img src="https://yt3.ggpht.com/aB4PjbvEPW3GoVODJcm7ywzxRNOtO15AV4PJyyh3og4ANGgAh7ULez_4zcBwMFvJh6Q4WAqLkA=s68-c-k-c0x00ffffff-no-rj" height="48" width="48" class="rounded-circle me-2" alt="Profile">
+                        <div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="fw-bold me-2">Jane Smith</span>
+                                <span class="text-secondary">@janesmith · 4h</span>
+                            </div>
+                            <p class="mb-2">Learning new things every day! Bootstrap makes frontend development so much easier. 💻 #learning</p>
+                            <div class="tweet-actions d-flex justify-content-between w-75">
+                                <div><i class="far fa-comment"></i> <span class="ms-1">18</span></div>
+                                <div><i class="fas fa-retweet"></i> <span class="ms-1">89</span></div>
+                                <div><i class="far fa-heart"></i> <span class="ms-1">563</span></div>
+                                <div><i class="far fa-share-square"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="tweet p-3 border-bottom">
+                    <div class="d-flex">
+                        <img src="https://yt3.ggpht.com/Cx1Io42mZrbidOUZXZXZGgF3pDT6fmfmIS3KKJy02hvtG5YhKpZojfjtpoV2xM8vAgLRWwvkRHc=s68-c-k-c0x00ffffff-no-rj" height="48" width="48" class="rounded-circle me-2" alt="Profile">
+                        <div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="fw-bold me-2">Jane Smith</span>
+                                <span class="text-secondary">@janesmith · 4h</span>
+                            </div>
+                            <p class="mb-2">Learning new things every day! Bootstrap makes frontend development so much easier. 💻 #learning</p>
+                            <div class="tweet-actions d-flex justify-content-between w-75">
+                                <div><i class="far fa-comment"></i> <span class="ms-1">18</span></div>
+                                <div><i class="fas fa-retweet"></i> <span class="ms-1">89</span></div>
+                                <div><i class="far fa-heart"></i> <span class="ms-1">563</span></div>
+                                <div><i class="far fa-share-square"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tweet p-3 border-bottom">
+                    <div class="d-flex">
+                        <img src="https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_x96.jpg" height="48" width="48" class="rounded-circle me-2" alt="Profile">
+                        <div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="fw-bold me-2">freeCodeCamp.org
+                                    <i style="color: #1da1f2;" class="bi bi-patch-check-fill"></i>
+                                </span>
+                                
+                                <span class="text-secondary">@freeCodeCamp · 2 May</span>
+                            </div>
+                            <p class="mb-2 lh-5" >As a developer, you'll likely have to work with databases at some point.
+
+                                So learning their key concepts and how to interact with them is important.<br>
+                                
+                                In this beginner-friendly tutorial, 
+                                <span class="r-18u37iz"><a dir="ltr" href="/AwedaIdris" role="link" class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1loqt21" style="color: rgb(29, 155, 240);">@AwedaIdris</a></span>
+                                teaches you about relational databases & shows you common commands to know.
+                            </p>
+                            <img src="https://pbs.twimg.com/media/Gp9MeTDXMAAfSUL?format=jpg&name=medium" height="286" width="516">
+                            <div class="tweet-actions d-flex justify-content-between w-75 mt-2" >
+                                <div><i class="far fa-comment"></i> <span class="ms-1">18</span></div>
+                                <div><i class="fas fa-retweet"></i> <span class="ms-1">89</span></div>
+                                <div><i class="far fa-heart"></i> <span class="ms-1">563</span></div>
+                                <div><i class="far fa-share-square"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                
+            </div>
+
+
+            
+
+            <!-- Right Sidebar -->
+            <div class="col-3 offset-9 position-fixed h-100">
+                <div class="p-3 me-5">
+                    <!-- Search Bar -->
+                    <div class="mb-3">
+
+                        <div class="search-container">
+                            <span class="input-group-addon"><i class="bi bi-search"></i>
+                            </span>
+                            <input type="search" id="searchInput" class="form-control rounded-pill" placeholder="Search" >
+
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <!-- Trends -->
+                    <div class=" rounded-2 p-3 mb-3 border">
+                        <h5 class="fw-bold mb-3">Trends for you</h5>
+                        <div class="mb-3">
+                            <small class="text-secondary">Trending in Technology</small>
+                            <div class="fw-bold">#WebDevelopment</div>
+                            <small class="text-secondary">125K Tweets</small>
+                        </div>
+                        <div class="mb-3">
+                            <small class="text-secondary">Trending in Programming</small>
+                            <div class="fw-bold">#Bootstrap</div>
+                            <small class="text-secondary">89K Tweets</small>
+                        </div>
+                    </div>
+
+                    <!-- Who to follow -->
+                    <div class=" rounded-2 p-3 border">
+                        <h5 class="fw-bold mb-3">Who to follow</h5>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="user.png" class="rounded-circle me-2" alt="Profile">
+                            <div class="flex-grow-1">
+                                <div class="fw-bold">Bootstrap</div>
+                                <small class="text-secondary">@bootstrap</small>
+                            </div>
+                            <button class="btn btn-dark rounded-pill">Follow</button>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="user.png" class="rounded-circle me-2" alt="Profile">
+                            <div class="flex-grow-1">
+                                <div class="fw-bold">HTML & CSS</div>
+                                <small class="text-secondary">@htmlcss</small>
+                            </div>
+                            <button class="btn btn-dark rounded-pill">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="footer mt-5">
+                        <div class="footer-section ">
+                            <span>Terms of Service</span>
+                            <span>|</span>
+                            <span>Privacy Policy</span>
+                            <span>|</span>
+                            <span>Cookie Policy</span>
+                            <span>|</span>
+                            <span>Accessibility</span>
+                            <span>|</span>
+                            <span>Ads info</span>
+                            <span>|</span>
+                            <span>More<i class="bi bi-three-dots"></i></span>
+                            
+                        </div>
+                        <span class="Copyright">&copy; 2025 Zaio Twitter Clone</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
